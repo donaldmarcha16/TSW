@@ -29,7 +29,8 @@
     </asp:ScriptManager>
     <asp:UpdatePanel ID="UpdatePanel1" runat="server">
         <ContentTemplate>
-            <div class="col-md-3"></div>
+
+   <div class="col-md-3"></div>
 	<div runat="server" class="col-md-6 well">
 		<h3 class="text-primary">Simple Stopwatch</h3>
 		<hr style="border-top:1px dotted #ccc;"/>
@@ -41,13 +42,13 @@
             <asp:Button ID="btnStop" Text="Stop" BackColor="Red" CssClass="button button4" runat="server" OnClick="Stop"/>
             <asp:Label ID="lblID" runat="server"  Text="" Visible="false"></asp:Label>
             </div>
-          </div>	
+          </div>
+            
         </ContentTemplate>
         <Triggers>
             <asp:AsyncPostBackTrigger ControlID="tm1" EventName="Tick" />
         </Triggers>
-    </asp:UpdatePanel>
-           
+    </asp:UpdatePanel>           
               <center>
     </form>
 </body>

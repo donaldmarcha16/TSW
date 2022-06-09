@@ -66,8 +66,7 @@ namespace TSW
                     using (SqlDataReader sdr = cmd.ExecuteReader(CommandBehavior.CloseConnection))
                     {
                         sdr.Read();
-                        lblID.Text = sdr["fldID"].ToString();
-                       
+                        lblID.Text = sdr["fldID"].ToString();                       
                     }
                     con.Close();
                 }            
@@ -76,6 +75,7 @@ namespace TSW
 
         protected void Stop(object sender, EventArgs e)
         {
+
             sw = new Stopwatch();
             sw.Stop();          
             btnStart.Enabled = true;
